@@ -1,0 +1,16 @@
+
+#Arquivo de inventario do Ansible
+[all]
+managed1 ansible_host=192.168.188.10 ansible_user=vagrant private_key_file=/root/.ssh/id_rsa
+managed2 ansible_host=192.168.188.11 ansible_user=vagrant private_key_file=/root/.ssh/id_rsa
+#192.168.188.12 ansible_host=controller ansible_user=vagrant
+
+[servers]
+managed1
+managed2
+
+[db]
+managed2
+
+[web]
+managed1
