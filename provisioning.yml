@@ -1,0 +1,7 @@
+---
+# Arquivo de Playbook do Ansible para ambiente de lab do Leandro
+
+ - hosts: all
+   tasks:
+    - shell: "echo hello > /tmp/hello.world"
+
